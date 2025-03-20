@@ -2649,7 +2649,7 @@ export interface PopupOptions extends DivOverlayOptions {
 export type Content = string | HTMLElement;
 
 export class Popup extends DivOverlay {
-    constructor(latlng: LatLngExpression, options?: TooltipOptions);
+    constructor(latlng: LatLngExpression, options?: PopupOptions);
     constructor(options?: PopupOptions, source?: Layer);
     openOn(map: Map): this;
 
