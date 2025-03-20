@@ -618,6 +618,8 @@ map = map
     .whenReady(() => {})
     .whenReady(() => {}, {});
 
+const popup = new L.Popup([0,0], popupOptions);
+
 const elementToDrag = document.createElement("div");
 const draggable = new L.Draggable(elementToDrag);
 draggable.enable();
